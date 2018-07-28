@@ -1,0 +1,137 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// SCSS Vars
+$breakpoint-mobile: 991px; 
+$lightblue: #199FDD;
+$darkblue: #1480c7;
+$grey: #afaeae;
+
+// Utility Classes
+.no-padding {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+// Nav styling
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	ul {
+		list-style: none;
+		display: inherit;
+	}
+	.navbar-brand {
+		img {
+			width: 50%;
+		}
+	}
+	.nav-item-link {
+		padding-left: 1em;
+		padding-right: 1em;
+			a {
+				color: white !important;
+			}
+	}
+}
+
+// Header Styling
+.header {
+	background: rgb(58,184,255); /* Old browsers */
+	background: rgb(58,184,255); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgb(58,184,255) 18%, rgb(58,184,255) 18%, rgb(58,184,255) 21%, rgb(58,184,255) 38%, rgb(20,128,199) 89%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgb(58,184,255) 18%,rgb(58,184,255) 18%,rgb(58,184,255) 21%,rgb(58,184,255) 38%,rgb(20,128,199) 89%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgb(58,184,255) 18%,rgb(58,184,255) 18%,rgb(58,184,255) 21%,rgb(58,184,255) 38%,rgb(20,128,199) 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ab8ff', endColorstr='#1480c7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	height: 50em;
+	border-bottom: 6px solid rgb(59,184,255);
+	img {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		width: 30%;
+	}
+
+	h2 {
+		padding-top: 2em;
+		padding-bottom: 2em;
+		font-size: 0.9em;
+	}
+
+	.header-text {
+		width: 40%;
+    	text-align: center;
+    	color: white;
+	}
+}
+
+// Paper Types Styling
+.types {
+	height: 30em;
+	background-color: white;
+	width: 100%;
+
+	span {
+		color: $darkblue;
+		font-size: 1.2em;
+	}
+
+	p {
+		color: $grey;
+		font-size: 0.85em;
+	}
+}
+
+// Slider Styling
+.slider {
+	background-color: $lightblue;
+	height: 50em;
+	.backArrow {
+		font-size: 5em;
+		color: white;
+	}
+	.nextArrow {
+		font-size: 5em;
+		color: white;
+	}
+	.image-container {
+		img {
+			width: 100%;
+		}
+	}
+	.slider-text {
+		width: 55%;
+    	text-align: center;
+    	color: white;
+    	.slide-title {
+    		text-align: center;
+    		padding-top: 1em;
+    		padding-bottom: 1em;
+    		font-size: 1.5em;
+    	}
+	}
+}
+
+// Mobile Styling
+@media (max-width: $breakpoint-mobile) {
+	.navbar {
+		ul {
+			background: #199FDD;
+		    width: 100%;
+		    text-align: right;
+		}
+		.navbar-brand {
+			width: 50%;
+		}
+		.navbar-light {
+			.navbar-toggler {
+				border: none !important;
+			}
+		}
+	}
+	.header {
+		.header-text {
+			width: 100%;
+		}
+	}
+}
