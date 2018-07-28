@@ -40,7 +40,7 @@ class TypeMain extends React.Component {
 
 function TypeCol({ items }) {
     return items.map((item, index) => (
-      <div key={index} className="col-md-3 col-sm-12 type-col">
+      <div key={index} className="col-md-6 col-lg-3 col-sm-12 type-col">
         <div className="col-12">
           <span>{item.icon}{item.title}</span>
         </div>
