@@ -1,25 +1,21 @@
 import React from 'react';
-// import TypeColOne from './TypeColOne.js';
-// import TypeColTwo from './TypeColTwo.js';
-// import TypeColThree from './TypeColThree.js';
-// import TypeColFour from './TypeColFour.js';
 
 const colData = [
   {
     title: '⌘ Fun Papers',
-    text: 'Some Text',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet enim orci, at pretium lectus rhoncus at. Vivamus laoreet ullamcorper turpis eu scelerisque. Integer ornare urna leo, id aliquet arcu luctus ut. Pellentesque eu sem molestie, fermentum nulla pulvinar, imperdiet massa.',
   },
   {
     title: 'Talk Papers',
-    text: 'Some Text',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet enim orci, at pretium lectus rhoncus at. Vivamus laoreet ullamcorper turpis eu scelerisque. Integer ornare urna leo, id aliquet arcu luctus ut. Pellentesque eu sem molestie, fermentum nulla pulvinar, imperdiet massa.',
   },
   {
     title: 'Creative paper',
-    text: 'Some Text',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet enim orci, at pretium lectus rhoncus at. Vivamus laoreet ullamcorper turpis eu scelerisque. Integer ornare urna leo, id aliquet arcu luctus ut. Pellentesque eu sem molestie, fermentum nulla pulvinar, imperdiet massa.',
   },
   {
     title: '⌘ Business papers',
-    text: 'Some Text',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet enim orci, at pretium lectus rhoncus at. Vivamus laoreet ullamcorper turpis eu scelerisque. Integer ornare urna leo, id aliquet arcu luctus ut. Pellentesque eu sem molestie, fermentum nulla pulvinar, imperdiet massa.',
   }
 ]
 

@@ -6368,12 +6368,13 @@ a.text-dark:hover, a.text-dark:focus {
     color: #0a5c84;
     font-size: 1.2em; }
   .types p {
-    color: #afaeae;
+    color: #cecece;
     font-size: 0.85em; }
 
 .slider {
   background-color: #199FDD;
-  height: 50em; }
+  padding-top: 1em;
+  padding-bottom: 2em; }
   .slider .backArrow {
     font-size: 5em;
     color: white; }
@@ -6386,24 +6387,59 @@ a.text-dark:hover, a.text-dark:focus {
     width: 55%;
     text-align: center;
     color: white; }
+    .slider .slider-text p {
+      color: #cecece;
+      font-size: 0.7em; }
     .slider .slider-text .slide-title {
       text-align: center;
       padding-top: 1em;
       padding-bottom: 1em;
       font-size: 1.5em; }
+    .slider .slider-text .title {
+      font-weight: 400; }
+    .slider .slider-text .subtitle span {
+      font-weight: 200;
+      font-size: 0.8em; }
 
 .faq {
   padding-top: 4em;
   padding-bottom: 4em;
   background-color: #0a5c84; }
+  .faq img {
+    width: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  .faq p {
+    text-align: center;
+    font-size: 1.5em;
+    color: white; }
   .faq .button-container {
     padding-top: 0.5em;
     padding-bottom: 0.5em; }
     .faq .button-container .button {
-      border: 2px solid white;
-      color: white;
+      border: 2px solid #cecece;
+      color: #cecece;
       padding: 1em 2em;
       border-radius: 15px; }
+      .faq .button-container .button:hover {
+        border: 2px solid white;
+        color: white;
+        padding: 1em 2em;
+        border-radius: 15px; }
+
+.contact h2 {
+  color: #0a5c84;
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.contact p {
+  font-size: 0.8em;
+  color: #cecece;
+  text-align: justify; }
+
+.contact .text {
+  text-align: center; }
 
 @media (max-width: 991px) {
   .navbar ul {
@@ -6416,5 +6452,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: none !important; }
   .header .header-text {
     width: 100%; }
-  .types .type-col {
-    text-align: center; } }
+  .types {
+    height: 100%; }
+    .types .type-col {
+      text-align: center; } }

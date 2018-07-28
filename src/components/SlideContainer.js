@@ -9,7 +9,7 @@ class SlideContainer extends React.Component {
         </div>
         <div className="row">
           <div className="image-container">
-            <img src={require('../images/'+this.props.slideData.image)}></img>
+            <img alt="slider" src={require('../images/'+this.props.slideData.image)}></img>
           </div>
         </div>
         <div className="row">

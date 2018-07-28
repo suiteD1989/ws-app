@@ -25,7 +25,7 @@ class HeaderContents extends React.Component {
       <div className="header-text justify-content-center align-self-center mx-auto">
         <h1>{this.state.title}</h1>
         <h2>{this.state.subtitle}</h2>
-        <img src={HeaderImage}></img>
+        <img alt="header" src={HeaderImage}></img>
       </div>
     );
   }

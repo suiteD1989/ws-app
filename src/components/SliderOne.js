@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SlideContainer from './SlideContainer.js';
-import Image from '../images/slider_image_1.png';
 
 const slideData = {
 	title: 'Title One',

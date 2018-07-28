@@ -4,12 +4,8 @@ import NavBar from './components/NavBar.js'
 import TypeMain from './components/TypesMain.js';
 import Slider from './components/SliderMain.js';
 import FaqMain from './components/FaqMain.js';
+import Contact from './components/Contact.js';
 import './App.css';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faStroopwafel)
 
 class App extends React.Component {
   render() {
@@ -20,6 +16,7 @@ class App extends React.Component {
         <TypeMain />
         <Slider />
         <FaqMain />
+        <Contact />
       </div>
     );
   }

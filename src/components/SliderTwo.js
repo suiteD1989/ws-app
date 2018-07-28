@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SlideContainer from './SlideContainer.js';
 
 const slideData = {
