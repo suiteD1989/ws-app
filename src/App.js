@@ -2,7 +2,8 @@ import React from 'react';
 import HeaderMain from './components/HeaderMain.js' 
 import NavBar from './components/NavBar.js'
 import TypeMain from './components/TypesMain.js';
-import Slider from './components/SliderMain.js'
+import Slider from './components/SliderMain.js';
+import FaqMain from './components/FaqMain.js';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -18,6 +19,7 @@ class App extends React.Component {
         <HeaderMain />
         <TypeMain />
         <Slider />
+        <FaqMain />
       </div>
     );
   }

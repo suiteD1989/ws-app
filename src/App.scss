@@ -3,7 +3,7 @@
 // SCSS Vars
 $breakpoint-mobile: 991px; 
 $lightblue: #199FDD;
-$darkblue: #1480c7;
+$darkblue: #0a5c84;
 $grey: #afaeae;
 
 // Utility Classes
@@ -70,15 +70,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ab8ff', end
 	height: 30em;
 	background-color: white;
 	width: 100%;
-
-	span {
-		color: $darkblue;
-		font-size: 1.2em;
-	}
-
-	p {
-		color: $grey;
-		font-size: 0.85em;
+		span {
+			color: $darkblue;
+			font-size: 1.2em;
+		}
+		p {
+			color: $grey;
+			font-size: 0.85em;
+		}
+	.type-col {
 	}
 }
 
@@ -112,6 +112,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ab8ff', end
 	}
 }
 
+// FAQ Styling
+.faq{
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background-color: $darkblue;
+
+	.button-container {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		.button {
+			border: 2px solid white;
+		    color: white;
+		    padding: 1em 2em;
+		    border-radius: 15px;
+		}
+	}
+}
+
 // Mobile Styling
 @media (max-width: $breakpoint-mobile) {
 	.navbar {
@@ -132,6 +150,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ab8ff', end
 	.header {
 		.header-text {
 			width: 100%;
+		}
+	}
+	.types {
+		.type-col {
+			text-align: center;
 		}
 	}
 }

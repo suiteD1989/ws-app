@@ -1,12 +1,34 @@
 import React from 'react';
 
+const ButtonInfo = [
+    { 
+      id: 1,
+      title: 'About', 
+      text: 'Some text about the about page.'
+    },
+    {
+      id: 2,
+      title: 'Paper', 
+      text: 'Paper is a thin material produced by pressing together moist fibers, typically cellulose pulp derived from wood, rags or grasses, and drying them into flexible sheets.'
+    },
+    {
+      id: 3,
+      title: 'Privacy', 
+      text: 'Some text about the privacy page.'
+    },
+  ];
+
 class FaqMain extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="faq">
         <div className="container h-100">
           <div className="row h-100 justify-content-center align-items-center">
-            
+            <Button items={ButtonInfo} />
           </div>
         </div>
       </div>
@@ -14,16 +36,14 @@ class FaqMain extends React.Component {
   }
 }
 
-class HeaderContents extends React.Component {
-  render() {
-    return (
-      <div className="header-text justify-content-center align-self-center mx-auto">
-        <h1>We make baautiful papers and books that you'll love to have.</h1>
-        <h2>see our papers</h2>
-        <img src={HeaderImage}></img>
+function Button({ items }) {
+    return items.map((item, index) => (
+      <div key={index}  className="col-md-2 d-flex justify-content-center button-container type-col">
+        <div id={index} className="button">
+          <span>{item.title}</span>
+        </div>
       </div>
-    );
-  }
+    ));
 }
 
-export default HeaderMain;
+export default FaqMain;

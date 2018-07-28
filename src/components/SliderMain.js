@@ -3,8 +3,22 @@ import SliderOne from './SliderOne.js';
 import SliderTwo from './SliderTwo.js';
 import SliderThree from './SliderThree.js';
 import SliderFour from './SliderFour.js';
-import RightArrow from './RightArrow.js';
-import LeftArrow from './LeftArrow.js';
+
+const RightArrow = (props) => {
+  return (
+    <div onClick={props.nextSlide}  className="nextArrow my-auto">
+      <i className="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+  );
+}
+
+const LeftArrow = (props) => {
+  return (
+    <div onClick={props.previousSlide}  className="backArrow my-auto">
+      <i className="fa fa-angle-left" aria-hidden="true"></i>
+    </div>
+  );
+}
 
 export default class Slider extends Component {
   constructor(props) {

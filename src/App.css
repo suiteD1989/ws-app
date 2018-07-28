@@ -6365,7 +6365,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: white;
   width: 100%; }
   .types span {
-    color: #1480c7;
+    color: #0a5c84;
     font-size: 1.2em; }
   .types p {
     color: #afaeae;
@@ -6392,6 +6392,19 @@ a.text-dark:hover, a.text-dark:focus {
       padding-bottom: 1em;
       font-size: 1.5em; }
 
+.faq {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: #0a5c84; }
+  .faq .button-container {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+    .faq .button-container .button {
+      border: 2px solid white;
+      color: white;
+      padding: 1em 2em;
+      border-radius: 15px; }
+
 @media (max-width: 991px) {
   .navbar ul {
     background: #199FDD;
@@ -6402,4 +6415,6 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar .navbar-light .navbar-toggler {
     border: none !important; }
   .header .header-text {
-    width: 100%; } }
+    width: 100%; }
+  .types .type-col {
+    text-align: center; } }
