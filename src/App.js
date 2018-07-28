@@ -5,6 +5,8 @@ import TypeMain from './components/TypesMain.js';
 import Slider from './components/SliderMain.js';
 import FaqMain from './components/FaqMain.js';
 import Contact from './components/Contact.js';
+import MapComponent from './components/Map.js';
+import Footer from './components/Footer.js'
 import './App.css';
 
 class App extends React.Component {
@@ -17,6 +19,8 @@ class App extends React.Component {
         <Slider />
         <FaqMain />
         <Contact />
+        <MapComponent />
+        <Footer />
       </div>
     );
   }

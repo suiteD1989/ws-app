@@ -36,17 +36,17 @@ class Form extends React.Component {
 	            	<div className="row">
 	            		<div className="col-md-6 col-sm-12">
 	            			<label htmlFor="name">Name</label>
-							<input type="text" className="form-control" id="name"/>
+							<input type="text" className="field form-control" id="name"/>
 	            		</div>
 	            		<div className="col-md-6 col-sm-12">
 	            			<label htmlFor="email">Email</label>
-							<input type="text" className="form-control" id="email"/>
+							<input type="text" className="field form-control" id="email"/>
 	            		</div>
 	            	</div>
 	            	<div className="row">
 	            		<div className="col-md-12">
 	            			<label htmlFor="message">Message</label>
-							<input type="text" className="form-control" id="message"/>
+							<input type="text" className="field form-control" id="message"/>
 	            		</div>
 	            	</div>
 	            	<div className="row">
@@ -60,7 +60,7 @@ class Form extends React.Component {
 	            		</div>
 	            		<div className="col-md-6 col-sm-12">
 	            			<div className="submit">
-            					<i className="fa fa-envelope"></i> Send message
+            					<span className="submit-wrapper"><i className="fa fa-envelope"></i> Send message</span>
 	            			</div>
 	            		</div>
 	            	</div>

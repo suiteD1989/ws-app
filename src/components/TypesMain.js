@@ -2,19 +2,23 @@ import React from 'react';
 
 const colData = [
   {
-    title: '⌘ Fun Papers',
+    icon: '⌘',
+    title: ' Fun Papers',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet enim orci, at pretium lectus rhoncus at. Vivamus laoreet ullamcorper turpis eu scelerisque. Integer ornare urna leo, id aliquet arcu luctus ut. Pellentesque eu sem molestie, fermentum nulla pulvinar, imperdiet massa.',
   },
   {
-    title: 'Talk Papers',
+    icon: <i className="fa fa-comments"></i>,
+    title: ' Talk Papers',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet enim orci, at pretium lectus rhoncus at. Vivamus laoreet ullamcorper turpis eu scelerisque. Integer ornare urna leo, id aliquet arcu luctus ut. Pellentesque eu sem molestie, fermentum nulla pulvinar, imperdiet massa.',
   },
   {
-    title: 'Creative paper',
+    icon: <i className="fa fa-comments"></i>,
+    title: ' Creative papers',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet enim orci, at pretium lectus rhoncus at. Vivamus laoreet ullamcorper turpis eu scelerisque. Integer ornare urna leo, id aliquet arcu luctus ut. Pellentesque eu sem molestie, fermentum nulla pulvinar, imperdiet massa.',
   },
   {
-    title: '⌘ Business papers',
+    icon: '⌘',
+    title: ' Business papers',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquet enim orci, at pretium lectus rhoncus at. Vivamus laoreet ullamcorper turpis eu scelerisque. Integer ornare urna leo, id aliquet arcu luctus ut. Pellentesque eu sem molestie, fermentum nulla pulvinar, imperdiet massa.',
   }
 ]
@@ -38,7 +42,7 @@ function TypeCol({ items }) {
     return items.map((item, index) => (
       <div key={index} className="col-md-3 col-sm-12 type-col">
         <div className="col-12">
-          <span>{item.title}</span>
+          <span>{item.icon}{item.title}</span>
         </div>
         <div className="col-12">
           <p>{item.text}</p>

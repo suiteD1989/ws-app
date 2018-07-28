@@ -33,7 +33,7 @@ class NavLink extends React.Component {
   render() {
     return (
       <li className="nav-item-link">
-        <a className="nav-item nav-link" href="#">{this.props.children}
+        <a className="nav-item nav-link section-link" href="#">{this.props.children}
         </a>
       </li>
     );
