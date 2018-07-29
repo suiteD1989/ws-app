@@ -22,7 +22,7 @@ class HeaderContents extends React.Component {
 
   render() {
     return (
-      <div className="header-text justify-content-center align-self-center mx-auto">
+      <div id="home" className="header-text justify-content-center align-self-center mx-auto" ref={(section) => { this.home = section; }}>
         <h1>{this.state.title}</h1>
         <h2>{this.state.subtitle}</h2>
         <img alt="header" src={HeaderImage}></img>

@@ -35,7 +35,7 @@ export default class Slider extends Component {
   render() {
 
     return (
-      <div className="slider no-padding d-flex">
+      <div id="slider" className="slider no-padding d-flex">
         <LeftArrow previousSlide={this.previousSlide} />
         
         { this.state.slideCount === 1 ? <SliderOne /> : null }

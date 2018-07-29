@@ -26,7 +26,7 @@ const colData = [
 class TypeMain extends React.Component {
   render() {
     return (
-      <div className="types">
+      <div id="types" className="types">
         <div className="container h-100">
           <div className="row h-100 justify-content-center align-items-center">
             <TypeCol items={colData}/>

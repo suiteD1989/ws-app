@@ -30,10 +30,12 @@ $grey: #cecece;
 	.nav-item-link {
 		padding-left: 1em;
 		padding-right: 1em;
-			a {
+			span {
 				color: white !important;
+				text-decoration: none !important;
 				&:hover {
 					color: $darkblue !important;
+					text-decoration: none !important;
 				}
 			}
 	}

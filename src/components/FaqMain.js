@@ -23,7 +23,7 @@ class FaqMain extends React.Component {
  
   render() {
     return (
-      <div className="faq">
+      <div id="faq" className="faq">
         <div className="container h-100">
           <div className="row h-100 justify-content-center align-items-center">
             <Button items={ButtonInfo} />

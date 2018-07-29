@@ -8,6 +8,7 @@ import Contact from './components/Contact.js';
 import MapComponent from './components/Map.js';
 import Footer from './components/Footer.js'
 import './App.css';
+import scrollToComponent from 'react-scroll-to-component';
 
 class App extends React.Component {
   render() {
